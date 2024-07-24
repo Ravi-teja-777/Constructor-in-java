@@ -1,0 +1,40 @@
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+
+public class Ravi{
+    
+    String car_name;
+    String car_color;
+    int weight;
+    int price;
+    
+    public Ravi(String n,String c,int w,int p){
+        car_name = n;
+        car_color = c;
+        weight = w;
+        price = p;
+    }
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        System.out.print("\nEnter your car name    : ");
+        String a = input.nextLine();
+        System.out.print("Enter your car color   : ");
+        String b = input.nextLine();
+        System.out.print("Enter your car weight  : ");
+        int d = input.nextInt();
+        System.out.print("Enter your car price   : ");
+        int e = input.nextInt();
+        
+        Ravi obj = new Ravi(a,b,d,e);
+        
+        System.out.println("\nEnter your car name is     : "+obj.car_name);
+        System.out.println("Enter your car color  is    : "+obj.car_color);
+        System.out.println("Enter your car weight is    : "+obj.weight);
+        System.out.println("Enter your car price  is    : "+obj.price);
+        
+        
+    }
+    
+    
+}
